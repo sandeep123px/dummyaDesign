@@ -1,0 +1,126 @@
+/*======= Common Style =======*/
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 12px;
+   line-height: 1.5;
+   font-weight: normal;
+   overflow-x: hidden;
+}
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+.d-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}  
+.d-between {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.container-lg {
+   max-width: 1220px;
+   padding-right: 0.9375rem;
+   padding-left: 0.9375rem;
+   margin-right: auto;
+   margin-left: auto;
+}
+.site-link {
+   font-size: 90%;
+   display: flex;
+   align-items: center;
+}
+.strike {
+   text-decoration: line-through;
+}
+.apply-btn {
+   border-radius: 2px;
+   padding: 3px 20px;
+   font-size: 14px;
+   letter-spacing: 2px;
+}
+.fw-600 {
+   font-weight: 600;
+}
+.fw-200 {
+   font-weight: 200;
+}
+.gradient-primary {
+   background: #526da9;
+   background: -moz-linear-gradient(to left,
+      #526da9 0%,
+      #3a749f 30%,
+      #3c759f 31%,
+      #2e7998 49%,
+      #2e7896 53%,
+      #297996 57%,
+      #2b7a94 59%,
+      #267b93 66%,
+      #266979 88%,
+      #296776 89%,
+      #2a5c6a 100%);
+   /* FF3.6-15 */
+   background: -webkit-linear-gradient(to left,
+      #526da9 0%,
+      #3a749f 30%,
+      #3c759f 31%,
+      #2e7998 49%,
+      #2e7896 53%,
+      #297996 57%,
+      #2b7a94 59%,
+      #267b93 66%,
+      #266979 88%,
+      #296776 89%,
+      #2a5c6a 100%);
+   /* FF3.6-15 */
+   background: linear-gradient(to left,
+      #526da9 0%,
+      #3a749f 30%,
+      #3c759f 31%,
+      #2e7998 49%,
+      #2e7896 53%,
+      #297996 57%,
+      #2b7a94 59%,
+      #267b93 66%,
+      #266979 88%,
+      #296776 89%,
+      #2a5c6a 100%);
+   /* FF3.6-15 */
+}
+.gradient-gray {
+   background: #efefef;
+   background: -moz-linear-gradient(to top, #efefef 0%, #c5c5c5 100%);
+   background: -webkit-linear-gradient(to top, #efefef 0%, #c5c5c5 100%);
+   background: linear-gradient(to top, #efefef 0%, #c5c5c5 100%);
+}
+.btn-warning {
+   background-color: $warning;
+   border-color: $warning;
+   &:hover {
+      background-color: #ffd21d;
+      border-color: $warning;
+   }
+}
+.btn-gray {
+   background-color: #545454; 
+   color: white;
+   &:hover {
+      box-shadow: none;
+      color: white;
+   }
+}
+.w-65 {
+   width: 65%;
+}
+.text-gray {
+   color: #c7d0d8;
+}
+.btn-circle {
+   border-radius: 100%;
+   padding: 0;
+   width: 40px;
+   height: 40px;
+}
