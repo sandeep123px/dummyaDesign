@@ -74,7 +74,7 @@ const Api = (props) =>{
                  if(x.length >= null && y.length  >= null  && z.length  >= null  ){
                      document.getElementById('button_hide').style.display="block"
                     //  return false;
-                
+
                     await fetch(`https://api.odmit.com/api/v1/course-type-count?qualification=${searchQul}&stream=${searchStream}&sub_stream=${searchSubStream}&course_type=${comp}`)
                     // await fetch(`https://api.odmit.com/api/v1/country-course-count?qualification=${searchQul}&stream=${searchStream}&sub_stream=${searchSubStream}&course_type=${comp}`)
                         .then((response)=>{
@@ -192,19 +192,19 @@ const Api = (props) =>{
                     <th>Total Course</th>
                 </thead>
                 <tbody>
-                    {
-                      country.map((v,i)=>{
+                      {
+                        country.map((v,i)=>{
 
-                          return(
-                            <tr key={i}>
-        <button className="back"
-         onClick={()=>props.history.push({pathname:"/categories",state:{searchQul:searchQul,searchStream:searchStream,searchSubStream:searchSubStream,courseType:courseType,countryName:`${v.country_name}`}})}> <td>{v.country_name}</td></button>
-                                 <td>{v.course_count}</td>
-                            </tr>
-                          )
+                            return(
+                              <tr key={i}>
+                              <button className="back"
+                                onClick={()=>props.history.push({pathname:"/categories",state:{searchQul:searchQul,searchStream:searchStream,searchSubStream:searchSubStream,courseType:courseType,countryName:`${v.country_name}`}})}> <td>{v.country_name}</td></button>
+                                   <td>{v.course_count}</td>
+                              </tr>
+                            )
 
-                      })
-                    }
+                        })
+                      }
                 </tbody>
              </table><br />
        <div id="please"></div>
